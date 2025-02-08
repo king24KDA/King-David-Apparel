@@ -1,53 +1,67 @@
-import React from "react";
-
-const App = () => {
-  return (
-    <div className="bg-gray-100">
-      {/* Navbar */}
-      <nav className="bg-white shadow-md py-4 px-6 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-gray-800">King David Apparel</h1>
-        <ul className="flex space-x-6">
-          <li><a href="#" className="text-gray-600 hover:text-black">Home</a></li>
-          <li><a href="#" className="text-gray-600 hover:text-black">Shop</a></li>
-          <li><a href="#" className="text-gray-600 hover:text-black">About</a></li>
-          <li><a href="#" className="text-gray-600 hover:text-black">Contact</a></li>
-        </ul>
-      </nav>
-
-      {/* Hero Section */}
-      <header className="text-center py-20 bg-cover bg-center" style={{ backgroundImage: "url('https://via.placeholder.com/1200x500')" }}>
-        <h2 className="text-4xl font-extrabold text-white">Power. Comfort. Confidence.</h2>
-        <p className="text-lg text-white mt-2">Premium apparel for big, tall, and athletic individuals.</p>
-        <button className="mt-4 px-6 py-2 bg-black text-white rounded-full hover:bg-gray-800">Shop Now</button>
-      </header>
-
-      {/* Featured Products */}
-      <section className="py-16 px-6">
-        <h2 className="text-3xl font-bold text-gray-800 text-center">Featured Products</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-          {/* Product Card */}
-          <div className="bg-white p-4 shadow-lg rounded-lg">
-            <img src="https://via.placeholder.com/300" alt="Product 1" className="w-full rounded" />
-            <h3 className="text-xl font-bold mt-2">King David Sweatsuit</h3>
-            <p className="text-gray-600">$79.99</p>
-            <button className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800">Buy Now</button>
-          </div>
-          <div className="bg-white p-4 shadow-lg rounded-lg">
-            <img src="https://via.placeholder.com/300" alt="Product 2" className="w-full rounded" />
-            <h3 className="text-xl font-bold mt-2">Signature Hoodie</h3>
-            <p className="text-gray-600">$49.99</p>
-            <button className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800">Buy Now</button>
-          </div>
-          <div className="bg-white p-4 shadow-lg rounded-lg">
-            <img src="https://via.placeholder.com/300" alt="Product 3" className="w-full rounded" />
-            <h3 className="text-xl font-bold mt-2">Classic T-Shirt</h3>
-            <p className="text-gray-600">$29.99</p>
-            <button className="mt-3 px-4 py-2 bg-black text-white rounded hover:bg-gray-800">Buy Now</button>
-          </div>
-        </div>
-      </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>King David Apparel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <h1 class="logo">King David Apparel</h1>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </div>
-  );
-};
+  </nav>
 
-export default App;
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h2>Power. Comfort. Confidence.</h2>
+      <p>Premium apparel for big, tall, and athletic individuals.</p>
+      <button class="cta-button">Shop Now</button>
+    </div>
+  </header>
+
+  <!-- Featured Products -->
+  <section class="products">
+    <h2 class="section-title">Featured Products</h2>
+    <div class="product-cards">
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Product 1">
+        <h3>King David Sweatsuit</h3>
+        <p>$79.99</p>
+        <button>Buy Now</button>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Product 2">
+        <h3>Signature Hoodie</h3>
+        <p>$49.99</p>
+        <button>Buy Now</button>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300" alt="Product 3">
+        <h3>Classic T-Shirt</h3>
+        <p>$29.99</p>
+        <button>Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 King David Apparel. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
